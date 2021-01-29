@@ -6,7 +6,7 @@ const FoodPlace = ({ places }) => {
         <div className='food-info'>
             { places.map((place) => (
                 <FoodCard key={place.place} 
-                place={place}> </FoodCard>
+                place={place} /> 
             ))}
         </div>
     )
