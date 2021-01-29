@@ -1,25 +1,53 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from "./components/Home";
+import About from "./components/About";
+import FoodPlace from './components/FoodPlace'
+import axios from 'axios';
+import { useState, useEffect } from 'react'
+import { 
+  BrowserRouter as Router,
+  Link,
+  Switch,
+  Route
+  } from "react-router-dom";
+
+// Get data from api
 
 function App() {
+  const [places, setPlaces] = useState([]);
+
+  useEffect(() => {
+    axios.get('https://hawaii-grinds-api.herokuapp.com/hawaii-food')
+    .then((url) => {
+    console.log(url.data)
+    setPlaces(url.data)
+    })
+    
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="container">
+        
+        <header>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+        </header>
+
+        <Switch>
+
+          <Route path="/" exact>
+          <FoodPlace places={places} />
+          </Route>
+
+          <Route path="/about">
+            <About />
+          </Route>
+
+        </Switch>
+
+      </div>
+    </Router>
   );
 }
-
 export default App;

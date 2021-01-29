@@ -1,0 +1,14 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid pink
+}
+
+img{
+    width: 200px;
+    border-radius: 3px;
+}
+
+.card {
+    border: 1px solid black;
+}
