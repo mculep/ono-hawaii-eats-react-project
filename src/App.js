@@ -1,5 +1,4 @@
 import './App.css';
-import Home from "./components/Home";
 import About from "./components/About";
 import FoodPlace from './components/FoodPlace'
 import axios from 'axios';
@@ -29,10 +28,10 @@ function App() {
     <Router>
       <div className="container">
         
-        <header>
+        <nav className="main-nav">
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
-        </header>
+        </nav>
 
         <Switch>
 
