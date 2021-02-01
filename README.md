@@ -15,7 +15,6 @@ I created my own API since the API's online were limited to what type of app I w
 ## Tools & Languages used:
 
 -   React.js
--   JSX
 -   CSS
 -   Figma
 -   Procreate
