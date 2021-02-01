@@ -42,10 +42,6 @@ header > img {
     background-color:#CFDFD3
 }
 
-.main-nav > .about-btn {
-    background-color: blue;
-}
-
 /* Card */
 
 .food-info {
@@ -64,7 +60,7 @@ header > img {
     margin: 35px;
 }
 
-.food-pics{
+.food-pics {
     width: 320px;
     height: 280px;
     border-radius: 8px;
@@ -72,8 +68,8 @@ header > img {
 }
 
 .food-details > h1 {
-  font-size: 1.5rem;
-  padding: 15px 0 0 15px;
+    font-size: 1.5rem;
+    padding: 15px 0 0 15px;
 }
 
 .food-details > p {
