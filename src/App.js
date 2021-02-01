@@ -1,8 +1,9 @@
 import './App.css';
 import About from "./components/About";
-import FoodPlace from './components/FoodPlace'
+import Header from './components/Header'
+import FoodPlace from './components/FoodPlace';
 import axios from 'axios';
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 import { 
   BrowserRouter as Router,
   Link,
@@ -24,17 +25,18 @@ function App() {
     
   }, [])
 
+  //Routers
+
   return (
     <Router>
       <div className="container">
-        
+        <Header />
         <nav className="main-nav">
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
         </nav>
 
         <Switch>
-
           <Route path="/" exact>
           <FoodPlace places={places} />
           </Route>
@@ -42,9 +44,7 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
-
         </Switch>
-
       </div>
     </Router>
   );
