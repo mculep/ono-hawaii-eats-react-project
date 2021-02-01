@@ -11,18 +11,20 @@
     flex-direction: column;
     justify-content: center;
     width: 100vw;
+    background-color:#fff
 }
 
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    background-color:#CFDFD3
 }
 
 header > img {
     margin-top: 60px;
     width: 250px;
+    background-color:#CFDFD3
 }
 
 /* Nav */
@@ -30,76 +32,76 @@ header > img {
 .container > .main-nav {
    display: flex;
    justify-content: center;
+   background-color:#CFDFD3
 }
     
-.main-nav {
-    margin-top: 60px;  
-
-}
-
 .main-nav a {
     text-decoration: none;
     padding: 30px;
     font-size: 1.5rem;
+    background-color:#CFDFD3
+}
+
+.main-nav > .about-btn {
+    background-color: blue;
 }
 
 /* Card */
 
-.food-pics{
-    width: 300px;
-    height: 200px;
-    border-radius: 8px;
-    object-fit: cover;
-    /* background: #fff; */
+.food-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
+    display: flex;
     background-color: #fff;
     box-shadow: 0px 2px 2px #ccc;
-    border-radius: 8px;
-    width: 300px;
-    height: 320px;
+    border-radius: 10px;
+    width: 320px;
+    height: 430px;
     margin: 35px;
-   
 }
 
-h1 {
+.food-pics{
+    width: 320px;
+    height: 280px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.food-details > h1 {
   font-size: 1.5rem;
-  text-align: left;
   padding: 15px 0 0 15px;
 }
 
-p {
-    font-size: 1rem;
-    padding: 5px 0 5px 15px;
-    color: gray;
+.food-details > p {
+    padding: 8px 0 10px 15px;
 }
 
-.card > .link-to-place {
-    color: black;
-    padding: 0 0 0 15px;
-    font-size: .85rem;
-    font-style: italic;
-    text-decoration: none;
+.detail-btn {
+    font-weight: 600;
+    margin-left: 15px;
+    color: #fff;
+    border: none;
+    background: #61C5C8;
+    margin-top: 15px;
+    border-radius: 2px;
+    padding: 7px 10px 7px 10px;
+    cursor:pointer;
 }
-
-.food-info {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: 75px;
-}
-
-/* .about-section {
- 
-} */
+/* About */
 
 .about-section > h1 {
+    font-size: 2rem;
+    text-align: center;
     margin: 35px;
-
 }
 
 .about-section > p {
-    line-height: 30px;
-    padding: 50px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 50px;
+    margin: 0 75px 0 75px;
 }

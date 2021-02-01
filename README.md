@@ -1,1 +1,1 @@
-#### Hawaii Grinds is an app that shows different places to eat on Oahu, HI.
+#### 'Ono Hawaii Eats is an app that displays some of the best places to eat on the islands of Hawaii.

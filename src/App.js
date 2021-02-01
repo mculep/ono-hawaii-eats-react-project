@@ -41,9 +41,7 @@ function App() {
           <FoodPlace places={places} />
           </Route>
 
-          <Route path="/about">
-            <About />
-          </Route>
+          <Route path="/about" component={About} />
         </Switch>
       </div>
     </Router>
