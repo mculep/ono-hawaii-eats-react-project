@@ -4,7 +4,8 @@ const About = () => {
     return (
         <div className="about-section">
              <h1>Aloha! Welcome to 'Ono Hawaii Eats!</h1>
-            <p>'Ono in hawaiian means "delicious". I created this app because a lot of people ask me what are some good places to eat when I visit Hawaii? I end up sending them a bunch links via email or text. This app shows a small list of places that are recommended by me and other locals. If you ever visit Hawaii, then you want to experience 'ono hawaii eats from the people that know Hawaii foods the best. </p>
+            <p>'Ono in Hawaiian means "delicious." I created this App because I was born and raised in Hawaii! Since I have years of experience on the island, hundreds of people ask me "where is the best place to eat when I come visit?" Usually, I send tons of links via email or text- but now they can see all of the highly rated eateries conveniently in one place!
+            </p>
         </div>
     )
 }
