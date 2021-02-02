@@ -39,7 +39,10 @@ header > img {
     text-decoration: none;
     padding: 30px;
     font-size: 1.5rem;
-    background-color:#CFDFD3
+    background-color:#CFDFD3;
+    font-weight: 600;
+    color: #C09A77;
+    
 }
 
 /* Card */
@@ -96,8 +99,8 @@ header > img {
 }
 
 .about-section > p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 400;
-    line-height: 50px;
+    line-height: 35px;
     margin: 0 75px 0 75px;
 }
