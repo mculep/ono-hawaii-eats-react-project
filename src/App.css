@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     background: #fff;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .container {
@@ -11,38 +11,37 @@
     flex-direction: column;
     justify-content: center;
     width: 100vw;
-    background-color:#fff
+    background-color: #fff;
 }
 
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#CFDFD3
+    background-color: #cfdfd3;
 }
 
 header > img {
     margin-top: 60px;
     width: 250px;
-    background-color:#CFDFD3
+    background-color: #cfdfd3;
 }
 
 /* Nav */
 
 .container > .main-nav {
-   display: flex;
-   justify-content: center;
-   background-color:#CFDFD3
+    display: flex;
+    justify-content: center;
+    background-color: #cfdfd3;
 }
-    
+
 .main-nav a {
     text-decoration: none;
     padding: 30px;
     font-size: 1.5rem;
-    background-color:#CFDFD3;
+    background-color: #cfdfd3;
     font-weight: 600;
-    color: #C09A77;
-    
+    color: #c09a77;
 }
 
 /* Card */
@@ -56,8 +55,8 @@ header > img {
 .card {
     display: flex;
     background-color: #fff;
-    box-shadow: 0px 2px 2px #ccc;
-    border-radius: 2px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 8px;
     width: 320px;
     height: 420px;
     margin: 35px;
@@ -66,17 +65,17 @@ header > img {
 .food-pics {
     width: 320px;
     height: 280px;
-    border-radius: 8px;
     object-fit: cover;
 }
 
 .food-details > h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 15px 0 0 15px;
 }
 
 .food-details > p {
     padding: 8px 0 10px 15px;
+    font-size: 0.9rem;
 }
 
 .detail-btn {
@@ -84,12 +83,26 @@ header > img {
     margin-left: 15px;
     color: #fff;
     border: none;
-    background: #61C5C8;
+    background: #61c5c8;
     margin-top: 8px;
     border-radius: 2px;
     padding: 7px 10px 7px 10px;
-    cursor:pointer;
+    cursor: pointer;
+    transition: 0.6s ease;
 }
+
+.detail-btn:hover {
+    font-weight: 600;
+    margin-left: 15px;
+    color: #fff;
+    border: none;
+    background: #e6b368;
+    margin-top: 8px;
+    border-radius: 2px;
+    padding: 7px 10px 7px 10px;
+    cursor: pointer;
+}
+
 /* About */
 
 .about-section > h1 {
