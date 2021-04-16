@@ -1,6 +1,6 @@
 ![Header](https://raw.githubusercontent.com/mculep/ono-hawaii-eats-react-project/main/src/images/readme-header.png)
 
-## Website [link](ono-hawaii-eats.surge.sh)
+## Website: [Click Here](http://ono-hawaii-eats.surge.sh/)
 
 ## Objective:
 
